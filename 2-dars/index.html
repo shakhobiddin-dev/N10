@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML darslari" />
+    <meta name="author" content="Shaxobiddin" />
+    <meta name="description" content="Dasturlash bo'yicha kurslar" />
+    <!-- <script>
+      alert("Javascript yuklandi");
+    </script> -->
+    <link rel="icon" type="image/png" href="./homework/osh.webp" />
+    <title>2-dars</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 50%;
+        text-align: left;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello world!</h1>
+    <h2>Hello world!</h2>
+    <h3>Hello world!</h3>
+    <h4>Hello world!</h4>
+    <h5>Hello world!</h5>
+    <h6>Hello world!</h6>
+    <p>Today is second lesson</p>
+    <hr />
+    <br />
+
+    <!-- Jadval yaratish -->
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Familiya</th>
+          <th>Yosh</th>
+          <th>Qiziqishi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Fatxullayev</td>
+          <td>21</td>
+          <td>Dasturlash</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Asadullayev</td>
+          <td>27</td>
+          <td>Futbol</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Shokirov</td>
+          <td>30</td>
+          <td>Shaxmat</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- "label"dagi for bilan "input"dagi id bir xil bo'lish kerak -->
+    <form action="./server.php" method="get">
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" /><br /><br />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" /><br /><br />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" /> <br /><br />
+
+      <label for="date">Date of birth</label>
+      <input type="date" name="date" id="date" /> <br /><br />
+
+      <label for="student">Student</label>
+      <input type="checkbox" name="student" id="student" /> <br /><br />
+
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" /><br /><br />
+
+      <label for="passport">Passport</label>
+      <input type="file" name="passport" id="passport" /><br /><br />
+
+      <label for="experience">Experience (years)</label>
+      <select name="experience" id="experience">
+        <option value="0">Tajribam yo'q</option>
+        <option value="1">1 yildan kam</option>
+        <option value="2">1 yildan ko'proq</option></select
+      ><br /><br />
+
+      <label for="about">About</label><br />
+      <textarea name="about" id="about" rows="10" cols="40"></textarea
+      ><br /><br />
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>

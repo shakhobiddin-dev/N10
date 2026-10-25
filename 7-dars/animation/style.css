@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    align-items: center;
+}
+
+.section1{
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    width: 500px;
+    height: 500px;
+    border: 40px solid red;
+    border-radius: 50%;
+    border-top: 40px solid white;
+    border-bottom: 40px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin1 2s linear infinite;
+}
+
+.box2{
+    width: 380px;
+    height: 380px;
+    border: 40px solid orange;
+    border-radius: 50%;
+    border-top: 40px solid white;
+    border-bottom: 40px solid white;
+    animation: spin1 1s linear reverse infinite;
+}
+
+@keyframes spin1{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.section2{
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.box3{
+    width: 250px;
+    height: 40px;
+    background-color: red;
+    animation-name: move;
+    animation: move 1s linear alternate infinite;
+
+}
+
+.box4{
+    width: 150px;
+    height: 150px;
+    border: 20px solid orange;
+    border-radius: 50%;
+    animation: up 1s linear alternate infinite;
+}
+
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes up{
+    from{
+        transform: translateY(300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+
+.section3{
+    width: 70%;
+    height: 600px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: end;
+    margin: 50px;
+    padding: 50px;
+}
+
+.box5{
+    height: 30px;
+    width: 250px;
+    background-color: red;
+    position: relative;
+}
+
+.box6{
+    height: 30px;
+    width: 250px;
+    background-color: rgb(255, 0, 0);
+    margin-bottom: 100px;
+
+}
+
+.box7{
+    height: 30px;
+    width: 250px;
+    background-color: red;
+    margin-bottom: 200px;
+}
+
+.box8{
+    height: 500px;
+    width: 30px;
+    background-color: red;
+}
+
+.ball{
+    height: 120px;
+    width: 120px;
+    background-color: orange;
+    border: 10px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+    animation: bridge 2s linear infinite alternate;
+
+
+}
+
+
+@keyframes bridge{
+    20%{
+        transform: translateY(-370px) translateX(140px);
+
+    }
+    40%{
+        transform: translateX(290px) translateY(-100px);
+
+    }
+    60%{
+        transform: translateY(-370px) translateX(500px);
+    }
+
+    80%{
+        transform: translateX(700px) translateY(-200px);
+    }
+
+    100%{
+        transform: translateY(-370px) translateX(870px);
+
+    }
+}

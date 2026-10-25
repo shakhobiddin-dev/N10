@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(170, 254, 180);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+
+
+}
+
+.main{
+    width: 780px;
+    height: 780px;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 10px 40px;
+    
+}
+
+.main input, textarea{
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+
+.main h2{
+    margin: 25px 0;
+}
+
+.main .title{
+    display: flex;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.form1 input, .form2 input, .form3-input, textarea, .btn {
+    margin-bottom: 8px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+.main .main-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --------------------------------------------- */
+
+.form1{
+    display: flex;
+    justify-content: stretch;
+    gap: 20px;
+}
+
+.form1 input{
+    width: 340px;
+    height: 60px;
+    
+}
+
+
+.form2 input{
+    width: 100%;
+    height: 60px;}
+
+.form3-radio{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.form3-input{
+    width: 360px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    font-size: 22px;
+
+}
+
+
+input[type="radio"], input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+}
+
+.form4 textarea{
+    width: 100%;
+    height: 150px;
+}
+
+.form5{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.btn{
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    background-color: rgb(13, 105, 13);
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+   

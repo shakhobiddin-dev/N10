@@ -1,0 +1,653 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-family: "Open Sans", sans-serif;
+    --second-family: "Lora", sans-serif;
+    --main-text: #686868;
+    --heading-color: #2f70d9;
+    --price-color: #d95845;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+}
+
+nav{
+    border-bottom: 6px solid #d95845;
+    border-radius: 5px;
+    display: none;
+    background-color: #fff;
+    width: 80%;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+.nav-section ul{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.nav-section ul a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: var(--main-text);
+    position: relative;
+}
+
+li:first-child{
+    width: 83px;
+}
+
+li:nth-child(2){
+    width: 116px;
+}
+
+li:nth-child(3){
+    width: 138px;
+}
+
+li:nth-child(4),li:last-child{
+    width: 72px;
+}
+
+
+nav li a:hover:after {
+    display: flex;
+    content: url(images/Выделение.png);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav li a:hover{
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: var(--heading-color);
+}
+
+.nav-section button{
+    width: 210px;
+    height: 40px;
+    border: 2px solid var(--heading-color);
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: var(--heading-color);
+}
+
+.nav-section button:hover{
+    border: 2px solid var(--heading-color);
+    background-color: var(--heading-color);
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+button:hover:active{
+    transform: scale(0.95);
+}
+
+.hero{
+    margin-top: 109px;
+    height: 852px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 27px;
+}
+
+.hero-section{
+    width: 597px;
+    height: 453px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero img{
+    width: 806px;
+    height: 702px;
+}
+
+.hero-section img{
+    width: 597px;
+    height: 216px;
+}
+
+.hero-section p{
+    width: 583px;
+    height: 102px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 141%;
+    letter-spacing: 0.5px;
+    color: var(--main-text);
+}
+
+.hero-section button{
+    width: 285px;
+    height: 75px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    color:#fff;
+    background-color: var(--price-color);
+    border-radius: 10px;
+    border: none;
+}
+
+main{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1{
+    height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30;
+}
+
+.section1-box{
+    height: 611px;
+    width: 583px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 114px;
+}
+
+.section1-box .img1{
+    width: 204px;
+    height: 64px;
+}
+
+.section1-box .img2{
+    width: 97.5px;
+    height: 9px;
+}
+
+.section1 .img3{
+    width: 810px;
+    height: 467px;
+}
+
+.section1-box div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section1-box p{
+    width: 583px;
+    height: 102px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 141%;
+    letter-spacing: 0.5px;
+    color: var(--main-text);
+}
+
+.section2{
+    height: 100vh;
+    padding-top: 170px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}   
+
+.card-box{
+    padding: 20px 200px;
+    height: 745px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.section2 .img1{
+    position: absolute;
+    left: 0px;
+    top: 140px;
+}
+
+.card{
+    width: 237px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.card img{
+    width: 65px;
+    height: 65px;
+}
+
+.card h3{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: var(--heading-color);
+}
+
+.card p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: var(--main-text);
+    text-align: center;
+}
+
+.section3{
+    height: 100vh;
+    padding-top: 170px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 .img1{
+    position: absolute;
+    top: 140px;
+    left: 0px;
+}
+
+.section3 .box1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.section3 .box2{
+    width: 305px;
+    height: 590px;
+    padding: 20px;
+    border: 3px solid var(--heading-color);
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section3 .couple{
+    height: 450px;
+}
+
+.section3 .box2 img{
+    height: 110px;
+}
+
+.section3 .box2 h3{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: var(--heading-color);
+}
+
+.section3 .box2 ul{
+    width: 121px;
+    height: 203px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: var(--main-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    gap: 13px;
+}
+
+.section3 .box2 h5{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: var(--heading-color);
+}
+
+.section3 .box2 h2{
+    width: 150px;
+    height: 32px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    color: var(--price-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span{
+    font-size: 20px;
+}
+
+.section4{
+    height: 100vh;
+    padding-top: 170px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.section4 .img1{
+    position: absolute;
+    top: 140px;
+    left: 0px;
+}
+
+.section4 .card1{
+    width: 335px;
+    height: 465px;
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.section4 .card1 img{
+    width: 120px;
+    height: 120px;
+}
+
+.section4 .card1 h5{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: var(--heading-color);
+}
+
+.section4 .card1 p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 141%;
+    letter-spacing: 0.5px;
+    color: var(--main-text);
+}
+
+.section5{
+    height: 100vh;
+    padding-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.section5 .box{
+    width: 355px;
+    height: 435px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: absolute;
+    top: 310px;
+    left: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 40px;
+}
+
+.section5 .box {
+    width: 355px;
+    height: 435px;
+}
+
+.section5 .box p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 141%;
+    letter-spacing: 0.5px;
+    color: var(--main-text);
+}
+
+.section5 .box p span{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 141%;
+    letter-spacing: 0.5px;
+    color: var(--main-text);
+}
+
+.section5 .box .number{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    color: #000;
+}
+
+.section5 .box div{
+    display: flex;
+    gap: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 333px;
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer .img1{
+    width: 180px;
+    height: 45px;
+}
+
+.footer ul a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.footer li:first-child{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: var(--heading-color);
+}
+
+.footer .box3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .box3 h3{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: var(--heading-color);
+}
+
+.btn1{
+    width: 210px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    background-color: var(--price-color);
+}
+
+.btn2{
+    width: 210px;
+    height: 40px;
+    border: 2px solid var(--main-text);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: var(--heading-color);
+    background-color: #282828;
+
+}
+
+.btn1:hover{
+    border: 2px solid var(--price-color);
+    color: var(--price-color);
+    background-color: #282828;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    border: 2px solid var(--heading-color);
+    color: #fff;
+    background-color: var(--heading-color);
+    cursor: pointer;
+}
+
+.footer .img2{
+    margin-top: 60px;
+}
+
+
+.footer .box{
+    font-family: var(--font-family);
+    color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.footer .box img{
+    width: 104px;
+    height: 26px;
+}
+
+.footer .box p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 141%;
+    letter-spacing: 0.5px;
+}
+
+.footer .box p span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 141%;
+    letter-spacing: 0.5px;
+}
+
+.footer .box .number{
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.footer .box div{
+    display: flex;
+    gap: 10px;
+}
+
+.footer .box div img{
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+

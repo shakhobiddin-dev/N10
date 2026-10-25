@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid black; */
+    padding: 10px 0px ;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.container{
+    width: 80%;
+    /* height: 53px; */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000;
+}
+
+.header-links{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-links ul{
+    height: 100%;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+    line-height: 101%;
+}
+
+header .header-buttons{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+
+.btn1{
+    width: 96px;
+    height: 52px;
+    border-radius: 35px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid black;
+    margin-left: 26px;
+
+}
+.btn2{
+    width:189px;
+    height: 50px;
+    border-radius: 35px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    margin-left: 18px; 
+}
+
+main{
+    width: 100%;
+    height: 2200px;
+    /* background-color: #a60f0f; */
+    margin-top: 142px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.quti1{
+    width: 80%;
+    height: 770px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.section1-box{
+    width: 483px;
+    height: 504px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 27px;
+}
+
+.section1-box h1{
+    width: 491px;
+    height: 166px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 108%;
+    color: #000;
+}
+
+.section1-box p{
+    width: 476px;
+    height: 92px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 153%;
+    color: #000;
+}
+
+.section1-box h3{
+    width: 209px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 133%;
+    color: #000;
+}
+
+.quti1 img{
+    width: 667px;
+    height: 517px;
+    position: absolute;
+    top: -30px;
+    right: -60px;
+}
+
+
+.btn3{
+    width: 159px;
+    height: 61px;
+    border-radius: 35px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+}
+
+.quti2{
+    width: 80%;
+    height: 700px;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    position: relative;
+     /* border: 1px solid black; */
+   
+}
+
+.quti2 img{
+    width: 483px;
+    height: 280px;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+}
+
+
+.section2-box{
+    width: 567px;
+    height: 345px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section2-box h1{
+    width: 443px;
+    height: 173 px;
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 101%;
+    color: #000;
+    margin-top: 50px;
+}
+
+.section2-box p{
+    width: 515px;
+    height: 123px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 153%;
+    color: #000;
+}
+
+.quti3{
+    width: 80%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: start; */
+     /* border: 1px solid black; */
+
+   
+}
+
+.section3-box{
+    width: 100%;
+    height: 397px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 140px;
+}
+
+.quti3 h1{
+    width: 355px;
+    height: 58px;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 99%;
+    color: #000;
+    margin-bottom: 30px;
+
+}
+
+.card{
+     /* border: 1px solid black; */
+     width: 308px;
+     height: 333px;
+
+}
+
+.card img{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 24px;
+}
+
+.card h3{
+    width: 290px;
+    height: 36px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 129%;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.card p{
+    width: 295px;
+    height: 96px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: #000;
+}
+
+.btn4{
+    width: 235px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    color: #000;
+    background-color: #F7B2B7;
+    border: none;
+    border-radius: 35px;
+    /* margin-bottom: 140px; */
+}
+
+.quti4{
+    width: 80%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* border: 1px solid black; */
+
+   
+}
+
+.section4-box{
+    width: 100%;
+    height: 397px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 140px;
+}
+
+.quti4 h1{
+    width: 557px;
+    height: 58px;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 99%;
+    color: #000;
+    /* margin-bottom: 30px; */
+
+}
+
+.main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 705px;
+    background-color: #fdeced;
+}
+
+footer{
+    height: 100%;
+    height: 631px;
+    background-color: #302e3f;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+
+}
+
+footer .quti5{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.foot-head{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.foot-head img{
+    width: 50px;
+    height: 50px;
+}
+.foot-head h3{
+    width: 290px;
+    height: 36px;
+    color: #fff;
+}
+
+.quti6{
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quti6 ul{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}

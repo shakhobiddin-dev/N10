@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="asosiy-div">
+      <h2>Contact Us</h2>
+
+      <!-- Ism familiya -->
+      <div class="ism-familiya-div">
+        <div class="ism-div">
+          <label>First Name *<br /><input type="text" required /></label><br />
+        </div>
+        <div class="familiya-div">
+          <label>Last Name *<br /><input type="text" required /></label><br />
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="email-div">
+        <label>Email Address *<br /><input type="email" required /></label
+        ><br />
+      </div>
+
+      <!-- Query type -->
+      <span>Query Type *</span><br />
+      <div class="tanlov-div">
+        <div class="tanlov1">
+          <label><input type="radio" name="same" /> General Enquiry</label>
+        </div>
+        <div class="tanlov2">
+          <label><input type="radio" name="same" /> Support Request</label>
+        </div>
+      </div>
+
+      <!-- Message -->
+      <div class="message-div">
+        <label>Message *<textarea required></textarea></label>
+      </div>
+
+      <!-- Checkbox-div -->
+      <div class="checkbox">
+        <label
+          ><input type="checkbox" required /> I consent to being contacted by
+          the team *</label
+        >
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

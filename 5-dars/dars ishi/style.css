@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 91px;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid #ff7500;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1000;
+    top: 0
+}
+
+.container{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.header-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.container img{
+    width: 227px;
+    height: 59px;
+}
+
+.header-box ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #000;
+    white-space: nowrap;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.btn{
+    width: 155px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    background-color: #ff7500;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.section1-box{
+    width: 100%;
+    height: 488px;
+    background-color: #252420;
+    margin-top: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.quti1 hr, .quti2 hr{
+    width: 80px;
+    height: 3px;
+    background-color: #ff7500;
+    margin-bottom: 24px;
+    border: none;
+}
+
+.quti1 h1, .quti3 h1{
+    width: 440px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 24px;
+    
+}
+
+.quti1 p, .quti3 p{
+    width: 440px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.quti1 .section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 387px;
+}
+
+.quti1 .section2 {
+    position: relative;
+}
+
+.quti1 .section2 img{
+    width: 510px;
+    height: 510px;
+    border-radius: 8px;
+    position: absolute;
+    right: 0px;
+    top: -195px;
+}
+
+.section2-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2-box .quti2{
+    height: 936px;
+    background-color: #fff;
+    justify-content:center;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+.quti2 h1{
+    width: 435px;
+    height: 172px;
+    font-size: 72px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 57px;
+}
+
+.main-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 340px;
+    height: 245px;
+}
+
+.box img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 32px;
+}
+
+.box h3{
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+}
+
+.box p{
+    width: 314px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.section3-box{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3-box .quti3{
+    height: 450px;
+    background-color: #252420;
+    border-radius: 12px;
+    gap: 92px;
+    position: relative;
+    padding: 60px;
+}
+
+.quti3 img{
+    width: 440px;
+    height: 440px;
+    position: absolute;
+    right: 80px;
+    top: -80px
+}
+
+footer{
+    width: 100%;
+    height: 507px;
+    display: flex;
+    justify-content: center;
+}
+
+.quti4{
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer-logos img{
+    width: 24px;
+    height: 24px;
+}
+
+.footer-box1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logos{
+    width: 104px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quti4 hr{
+    width: 100%;
+    height: 2px;
+    border: none;
+    background-color: rgba(37, 36, 32, 0.5);
+}
+
+.footer-box2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.quti4 ul{
+    width: 224px;
+    list-style-type: none;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #252420;
+}
+
+span{
+    color: #ff7500;
+    font-weight: bold;
+}
